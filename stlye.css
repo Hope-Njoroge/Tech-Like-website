@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* //added these two */
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* // you forgot to style the body */
+body {
+    min-height: 100vh;
+    background : url("images/Coding\ 3.jpeg") no-repeat;  
+    background-size: cover;
+    background-position: center;
+}
+/* //i changed everything on the header tag  */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* //styling the logo */
+
+img {
+    width: 250px;
+    
+}
+
+/* //styling the other buttons */
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+/* creating the underline animation every time the cursor is on the links */
+
+.navbar a::before {
+    content:'';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}   
+
+.navbar a:hover::before {
+    width: 100%;
+}
+
+/* nav{
+      display:flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items:center;
+
+}
+
+nav img{
+    width: 150px;
+}
+.nav-links{
+    display: flexbox;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 12px;
+    color: #fff;
+    list-style: none;
+}
+/* .nav-links ul li{
+    color:#fff;
+    text-decoration: none;
+    font-size:14px;
+}
+.nav-links ul li{
+    content:'';
+    width: 0px;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin:auto;
+    transition: 0.5s; */
+
+
+/* .nav-links ul li:hover::after{
+    width:100px
+} */ 
+
+section {
+    min-height: 100vh;
+}
+.text-b0x{
+    width:90%;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-b0x h1{
+    font-size: 62px;
+}
+.text-b0x p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color:#fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding:12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position:relative;
+    cursor:pointer;
+}
+.hero-btn:hover {
+    border: 1px solid #f436e4;
+    background: #f436eb;
+    transition:1s;
+}
+
+
+
+
+
+
+
+
+
+    
